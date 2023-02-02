@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:padaria_panq/app/modules/models/products/products_model.dart';
 
 class HomeController extends GetxController {
   final listUrls = [
@@ -23,13 +22,13 @@ class HomeController extends GetxController {
     'Brusqueta',
   ];
 
-  RxList listProducts = <ProductsModel>[].obs;
+  // RxList listProducts = <ProductsModel>[].obs;
 
-  insertProducts() {
-    for (int i = 0; i < listUrls.length; i++) {
-      listProducts.add(
-          ProductsModel(nameProduct: listNamesProd[i], image: listUrls[i]));
-    }
-    return listProducts;
-  }
+  // insertProducts() {
+  //   for (int i = 0; i < listUrls.length; i++) {
+  //     listProducts.add(
+  //         ProductsModel(nameProduct: listNamesProd[i], image: listUrls[i]));
+  //   }
+  //   return listProducts;
+  // }
 }

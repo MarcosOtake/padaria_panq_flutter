@@ -37,23 +37,32 @@ dependencies:
   get: ^4.6.5
   lottie: ^1.4.2
   get_storage: ^2.0.3
-  objectbox: ^1.7.1
-  objectbox_generator: ^1.7.1
+  # objectbox: ^1.7.1
+  # objectbox_flutter_libs: ^1.7.1
   validatorless: ^1.2.3 
   intl: ^0.18.0
   persistent_bottom_nav_bar: ^5.0.2
-  image_picker: ^0.8.6
-
+  image_picker: ^0.8.6  
+  bubble_tab_indicator: ^0.1.6
+  fl_chart: ^0.46.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  hive_generator: ^1.1.3
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  build_runner: ^2.0.0
+  # objectbox_generator: ^1.7.1
+  
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
+
+# objectbox:
+#   output_dir: app_teste/data/objectbox_generation
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

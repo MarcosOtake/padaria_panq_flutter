@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PadariaTextFormField extends StatelessWidget {
   final String label;
-  final TextEditingController? controller;
+  final Rx<TextEditingController>? controller;
   final bool obscureText;
   final FormFieldValidator<String>? validator;
   final ValueChanged<String>? onChanged;
@@ -19,7 +20,7 @@ class PadariaTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      controller: controller,
+      controller: controller?.value,
       obscureText: obscureText,
       validator: validator,
       onChanged: onChanged,

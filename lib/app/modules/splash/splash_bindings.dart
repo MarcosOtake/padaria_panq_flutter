@@ -1,8 +1,9 @@
-// import 'package:pan_q_flutter/app/modules/splash/splash_controller.dart';
+import 'package:get/get.dart';
+import 'package:padaria_panq/app/modules/splash/splash_controller.dart';
 
-// class SplashBindings implements Bindings {
-//   @override
-//   void dependencies() {
-//     Get.lazyPut(() => SplashController());
-//   }
-// }
+class SplashBindings implements Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut(() => SplashController());
+  }
+}

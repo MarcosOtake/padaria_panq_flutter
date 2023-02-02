@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:padaria_panq/app/core/ui/widgets/padaria_button.dart';
-import 'package:padaria_panq/app/routes/routes.dart';
+import 'package:padaria_panq/app/routes/routers.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -28,7 +28,7 @@ class SplashPage extends StatelessWidget {
             alignment: Alignment.center,
             child: Column(
               children: [
-                SizedBox(height: context.heightTransformer(reducedBy: 99.9)),
+                SizedBox(height: context.heightTransformer(reducedBy: 94.9)),
                 Image.asset(
                   'assets/images/logo-pan_q.png',
                   fit: BoxFit.cover,
@@ -38,7 +38,7 @@ class SplashPage extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: PadariaButton(
                     onPressed: () {
-                      Get.toNamed(Routes.auth);
+                      Get.offAndToNamed(Routers.authLogin);
                     },
                     label: 'ACESSAR',
                     width: context.widthTransformer(reducedBy: 10),

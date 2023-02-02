@@ -1,21 +1,24 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:padaria_panq/app/modules/splash/splash_bindings.dart';
+import 'package:padaria_panq/app/routes/routers.dart';
 
-// class SplashController extends GetxController {
-//   final controller = Get.lazyPut(() => SplashBindings());
+class SplashController extends GetxController {
+  final controller = Get.lazyPut(() => SplashBindings());
 
-//   @override
-//   void onInit() async {
-//     debugPrint('onInit');
+  @override
+  void onInit() async {
+    debugPrint('onInit');
 
-//     super.onInit();
-//   }
+    super.onInit();
+  }
 
-//   @override
-//   void onReady() async {
-//     await Future.delayed(const Duration(seconds: 5));
-//     Get.offAndToNamed(Routes.homeScreen);
-//     super.onReady();
-//   }
-// }
+  @override
+  void onReady() {
+    Get.to(Routers.homepage);
+    super.onReady();
+  }
+}
 
 
 // Center(
